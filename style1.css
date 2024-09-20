@@ -225,7 +225,6 @@ body {
         white-space: none;
         position: absolute;
         top: 6px;
-        z-index: 6;
         display-resp: none;
         margin-top: 70px;
         padding-top: 20px;
