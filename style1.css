@@ -21,6 +21,7 @@ body {
     align-items: 100%;
     padding-left: 20px;
     position: fixed;
+    align-items: center;
     width: 100%;
     height: 70px;
     top: 0;
@@ -50,6 +51,22 @@ body {
     right: 20px;
 }
 
+#MenuItems{
+    display: flex;
+    height: 70px;
+    width: auto;
+    gap: 24px;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+}
+
+#MenuItems li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
 
 .container {
     display: flex;
@@ -266,7 +283,9 @@ body {
         background-position: center bottom;
         background-size: cover;
     }
-
+    #MenuItems{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1900px) {
@@ -312,19 +331,22 @@ body {
     display: none;
 }
 #gauge_cont{
-    height: 450px;
+    height: 10px;
     display: flex;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
+    row-gap: 200px;
 }
 .gauge_container{
-    height: 360px;
+    height: 60px;
     width: 360px;
     display: block;
+    margin-top: 0px;
 }
 #zone_screen_heading{
     height: 50px;
@@ -333,12 +355,13 @@ body {
     line-height: 50px;
     font-size: 45px;
     font-weight: 600;
-    margin-top: 6%;
+    margin-top: 5%;
 }
 .zone_1_text{
     height: 60px;
     width: 360px;
     position: absolute;
+    top: 640px;
     z-index: 13;
     display: block;
     line-height: 60px;
@@ -358,7 +381,8 @@ body {
     height: 360px;
     width: 360px;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    top: 0%;
     background-color: white;
     transform: rotate(-100deg);
     transition: all 0.3s ease-in-out;
@@ -381,6 +405,7 @@ body {
     width: 100%;
     background-image: linear-gradient( rgb(255, 0, 0) 0%, rgb(255, 64, 0) 25%, rgb(246, 255, 0) 50%,rgb(0, 255, 0) 100%);
     left: 0px;
+    
 }
 .gauges::after{
     height: 80%;
@@ -399,6 +424,7 @@ body {
     width: 100%;
     background-image: linear-gradient( rgb(255, 0, 0) 0%, rgb(255, 110, 61) 40%, rgb(0, 255, 0) 100%);
     left: 0px;
+    top: 0px;
     border-radius: 50%;
 }
 .gauge_div::after{
@@ -519,9 +545,9 @@ body {
     height: 360px;
     width: 360px;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     background-color: white;
-    margin-top: 20%;
+    margin-top: 320px;
     transform: rotate(-100deg) ;
     transition: all 0.3s ease-in-out;
     z-index: 10;
@@ -592,7 +618,7 @@ body {
 
 }
 .circular-text {
-    position: absolute;
+    position: relative;
     width: 305px;
     height: 305px;
     border-radius: 50%;
@@ -601,9 +627,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1C2841;
-    top: 393px;
+    top: 63px;
     z-index:11;
-    left: 18.25vw;
+    left: 1.2vw;
     transform: scale(1.5) rotate(80deg);
   }
 
@@ -615,7 +641,7 @@ body {
     color: white;
   }
 .circular-text_home_1{
-    position: absolute;
+    position: relative;
     width: 282px;
     height: 282px;
     border-radius: 50%;
@@ -624,9 +650,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1C2841;
-    top: 323px;
+    top: 218px;
     z-index:11;
-    left:13.5%;
+    left:10.8%;
 }
 .circular-text_home_1 span {
     position: absolute;
@@ -636,7 +662,7 @@ body {
     color: white;
 }
 .circular-text_home_2{
-    position: absolute;
+    position: relative;
     width: 282px;
     height: 282px;
     border-radius: 50%;
@@ -645,9 +671,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1C2841;
-    top: 323px;
+    top: 213px;
     z-index:11;
-    left:42%;
+    left:10.8%;
 }
 .circular-text_home_2 span {
     position: absolute;
@@ -657,7 +683,7 @@ body {
     color: white;
 }
 .circular-text_home_3{
-    position: absolute;
+    position: relative;
     width: 282px;
     height: 282px;
     border-radius: 50%;
@@ -666,9 +692,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1C2841;
-    top: 323px;
+    top: 213px;
     z-index:11;
-    left:70.46%;
+    left:10.8%;
 }
 .circular-text_home_3 span {
     position: absolute;
@@ -704,6 +730,7 @@ body {
     position: absolute;
     z-index: 13;
     line-height: 60px;
+    top: 640px;
     font-size: 50px;
     font-weight: 500;
     left: 18.5vw;
@@ -716,6 +743,7 @@ body {
     line-height: 60px;
     font-size: 50px;
     font-weight: 500;
+    top: 640px;
     left: 43vw;
 }
 #percent_3{
@@ -727,12 +755,14 @@ body {
     font-size: 50px;
     font-weight: 500;
     left: 67.5vw;
+    top: 640px;
 }
 .percent{
     height: 80px;
     width: 60px;
     position: absolute;
     z-index: 13;
+    top: 700px;
     line-height: 80px;
     font-size: 50px;
     font-weight: 500;
@@ -745,4 +775,8 @@ body {
     text-align: left;
     padding-left: 20px;
     margin-bottom: 40px;
+}
+#zone_1_texts{
+    position: absolute;
+    top: 700px;
 }

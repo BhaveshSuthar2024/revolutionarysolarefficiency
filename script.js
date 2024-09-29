@@ -33,6 +33,14 @@ document.getElementById("zone3").addEventListener("click", function(){
     document.getElementById("zone_2_screen").style.display = "none";
 });
 
+document.getElementById("home_cont").addEventListener("click", function(){
+    document.getElementById("zone_3_screen").style.display = "none";
+    document.getElementById("zone_1_screen").style.display = "none";
+    document.getElementById("zone_2_screen").style.display = "none";
+    document.getElementById("zone_screen").style.display = "none";
+    document.getElementsByClassName("main").style.display = "block";
+})
+
 let displayValues = document.querySelectorAll(".zone_1_text");
 let timePeriod = 3000;
 
@@ -53,3 +61,4 @@ setTimeout(function() {
         }, duration);
     });
 }, 2000)
+
