@@ -22,7 +22,7 @@ body {
     padding-left: 20px;
     position: fixed;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 70px;
     top: 0;
     left: 0;
@@ -334,8 +334,8 @@ body {
     height: 10px;
     display: flex;
     width: 1290px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 15%;
     flex-wrap: wrap;
     flex-shrink: 0;
     justify-content: space-between;
@@ -369,13 +369,14 @@ body {
     font-weight: 500;
 }
 #zone_text_1{
-    left: 8vw;
+    position: absolute;
+    left: 92px;
 }
 #zone_text_2{
-    left: 32.6vw;
+    left: 545px;
 }
 #zone_text_3{
-    left: 57vw;
+    left: 1010px;
 }
 .gauges{
     height: 360px;
@@ -570,7 +571,7 @@ body {
     position: absolute;
     z-index: 13;
     margin-top: 30px;
-    left: 16vw;
+    left: 15.6vw;
     line-height: 80px;
     font-size: 50px;
     -webkit-text-stroke: 0.05vw black;
@@ -733,7 +734,7 @@ body {
     top: 640px;
     font-size: 50px;
     font-weight: 500;
-    left: 18.5vw;
+    left: 298px;
 }
 #percent_2{
     height: 60px;
@@ -744,7 +745,7 @@ body {
     font-size: 50px;
     font-weight: 500;
     top: 640px;
-    left: 43vw;
+    left: 750px;
 }
 #percent_3{
     height: 60px;
@@ -754,7 +755,7 @@ body {
     line-height: 60px;
     font-size: 50px;
     font-weight: 500;
-    left: 67.5vw;
+    left: 1225px;
     top: 640px;
 }
 .percent{
@@ -766,14 +767,14 @@ body {
     line-height: 80px;
     font-size: 50px;
     font-weight: 500;
-    left: 26.8vw;
+    left: 26.5vw;
     margin-top: 30px;
 }
 .gauge_1_cont_details_heading{
     margin-top: 240px;
     font-size: 40px;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 0px;
     margin-bottom: 40px;
 }
 #zone_1_texts{
